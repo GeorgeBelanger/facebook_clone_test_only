@@ -1,0 +1,12 @@
+<%= @alert %>
+<%= @errors %>
+
+<%= form_for(User.new) do |f| %>
+
+	<%=f.text_field :name, placeholder: "Enter name here"%>
+	<%=f.text_field :email, placeholder: "Enter email here"%>
+	<%=f.text_field :password, placeholder: "Enter password here"%>
+	<%=f.text_field :password_confirmation, placeholder: "Confirm password"%>
+
+	  <%= f.submit "Submit!", class: "button"%>
+<% end %>

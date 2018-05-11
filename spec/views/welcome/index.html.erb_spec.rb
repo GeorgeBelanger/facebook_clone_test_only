@@ -11,14 +11,14 @@ RSpec.describe "welcome/index.html.erb", type: :view do
       user = FactoryGirl.create(:user)
       session[:user_id] = user.id
       render
-      expect(rendered).to have_link("Log Out", href: signout_path)
+      expect(rendered).to have_link("Log Out", href: signout_path_url)
     end
   end
 
   context "not logged in" do
     it "display log in button" do
       render
-      expect(rendered).to have_link("Log In", href: new_session_path)
+      expect(rendered).to have_link("Log In", href: new_sessions_path)
     end
   end
 end

@@ -1,4 +1,4 @@
-require 'rails_helper'
+  require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
   let(:valid_params) {{ name: "Josh Teng", email: "josh@na.com", password: "123456", password_confirmation: "123456"}}

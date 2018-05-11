@@ -29,7 +29,7 @@ RSpec.describe Status, type: :model do
   context 'most recent status showed first' do
     it 'retrieves the most recent status first' do
       status_1 = Status.create(title: "How do you feel today?", content: "I feel good, what about you?")
-      status_2= Status.create(title: "How r u today?",
+      status_2 = Status.create(title: "How r u today?",
         content: "I feel terribly bad, I m sick",
         created_at: Time.now + 1.hour
       )
